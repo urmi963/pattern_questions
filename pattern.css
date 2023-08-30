@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		
+	//1
+		{
+		   Console.WriteLine("Example #1\n------------");
+
+		  	for (int i = 1; i <= 5; i++) {
+                int j = 1;
+                while (j <= i) {                //while loop
+                    Console.Write("*");
+                    j++;
+                }
+            Console.WriteLine();
+			}
+			
+			Console.WriteLine("\n");
+
+	//2---------------------------------------	
+	        Console.WriteLine("Example #2\n------------");
+
+			for (int i =1; i<=5; i++) {   //rows
+			    for (int k=1; k<=i; k++){   //columns
+			        Console.Write("*");
+			    }
+			    Console.WriteLine();
+			}
+			
+			Console.WriteLine("\n");
+			
+	//3---------------------------------------	
+	        Console.WriteLine("Example #3\n------------");
+	        
+           for (int i=1; i<=5; i++){
+                for (int j=i; j<=5; j++){  //spaces before the symbols
+                    Console.Write("  ");
+                }
+                for(int n=1; n<=2*i-1; n++){
+                    Console.Write("*" +" ");
+                }
+                Console.WriteLine();
+            }
+        	Console.WriteLine("\n");
+
+    //4---------------------------------------	
+	        Console.WriteLine("Example #4\n------------"); 
+	        
+	        int bear=5;
+	        for(int i=1; i<=bear; i++){
+	            for(int j=1; j<=bear-i; j++){
+	                Console.Write(" ");
+	            }
+	            for (int k=1; k<=i; k++){
+	                Console.Write("*");
+	            }
+	            Console.WriteLine();
+	        }
+          
+        	Console.WriteLine("\n");  
+ 
+ //5---------------------------------------	
+	        Console.WriteLine("Example #5\n------------"); 
+            
+            int r,c;
+            for( r=5; r>=1; --r) {   //rows
+                for( c=1; c<=r; ++c){
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+		}
+	}
+}
